@@ -17,7 +17,7 @@ export function SidebarItem({
 
 	return (
 		<div
-			className={`flex items-center gap-2 px-3 py-2 rounded-md cursor-pointer transition-all
+			className={`flex w-full items-center gap-2 px-3 py-2 rounded-md cursor-pointer transition-all
 				duration-200 ${style}`}
 		>
 			<div className="flex items-center justify-between w-full">
