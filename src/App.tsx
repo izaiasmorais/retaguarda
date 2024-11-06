@@ -6,7 +6,7 @@ export default function App() {
 		<div className="xl:grid xl:grid-cols-app min-h-screen">
 			<Sidebar />
 
-			<main className="xl:col-start-2 max-w-[100vw] flex flex-col h-screen">
+			<main className="xl:col-start-2 max-w-[100vw] bg-[#43344B] flex flex-col h-screen">
 				<Header />
 
 				<div className="p-4 flex-grow overflow-auto">
