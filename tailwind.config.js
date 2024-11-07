@@ -4,7 +4,7 @@ export default {
 	theme: {
 		extend: {
 			gridTemplateColumns: {
-				app: "20rem 1fr",
+				app: "21.25rem 1fr",
 			},
 		},
 	},

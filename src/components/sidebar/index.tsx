@@ -11,6 +11,7 @@ import {
 	Settings,
 	ShieldCheck,
 	ShoppingBasket,
+	ShoppingCart,
 	Smartphone,
 	Star,
 	Store,
@@ -24,8 +25,8 @@ export function Sidebar() {
 	return (
 		<div
 			className="border-b bg-white data-[state=open]:bottom-0 md:data-[state=closed]:bottom-0 left-0 top-0
-			right-0 flex flex-col p-4 fixed z-20 xl:right-auto md:w-80 xl:border-r gap-6 border-muted
-			 xl:data-[state=open]:h-screen h-full"
+			right-0 flex flex-col p-4 fixed z-20 xl:right-auto md:w-[340px] xl:border-r gap-6 border-muted
+			 xl:data-[state=open]:h-screen h-full overflow-y-auto custom-scrollbar"
 		>
 			<strong className="text-2xl">Retaguarda</strong>
 
@@ -38,9 +39,9 @@ export function Sidebar() {
 
 				<SidebarItem name="Vendas" icon={<Banknote size={24} />} />
 
-				<SidebarItem name="Registro" icon={<Database size={24} />} hasSubmenu>
+				<SidebarItem name="Cadastro" icon={<Database size={24} />} hasSubmenu>
 					<SidebarSubItem name="Clientes" icon={<Users size={24} />} />
-					<SidebarSubItem name="Produtos" icon={<Users size={24} />} />
+					<SidebarSubItem name="Produtos" icon={<ShoppingCart size={24} />} />
 				</SidebarItem>
 
 				<SidebarItem

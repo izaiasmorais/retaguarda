@@ -5,3 +5,23 @@
 body {
 	font-family: "Inter", sans-serif;
 }
+
+@layer utilities {
+	.custom-scrollbar::-webkit-scrollbar {
+		width: 12px;
+	}
+
+	.custom-scrollbar::-webkit-scrollbar-track {
+		background: white;
+	}
+
+	.custom-scrollbar::-webkit-scrollbar-thumb {
+		background-color: #e2e8f0;
+		border-radius: 8px;
+		border: 2px solid white;
+	}
+
+	.custom-scrollbar::-webkit-scrollbar-button {
+		display: none;
+	}
+}
